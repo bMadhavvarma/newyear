@@ -1,0 +1,154 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+.back-container{
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+.text-container{
+   font-size: 70px;
+   width: 100%;
+   position: absolute;
+   text-align: center;
+   top: 50%;
+   color: deeppink;
+   opacity: 0;
+   right: 10px;
+   text-shadow: 20px;
+   font-family: 'Bilbo Swash Caps', cursive;
+   animation: message 4s ease-in-out 2s forwards;
+}
+@keyframes message {
+    0%{
+        opacity: 0;
+    
+    }
+    100%{
+       opacity: 1;
+       top: 25%;
+    }
+}
+.forever{
+    font-size: 100px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    animation: colour-ever 2s ease-in-out 4s forwards;
+    letter-spacing: -5px;
+}
+.year{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+}
+.old{
+    opacity: 1;
+    font-size: 100px;
+    color: white;
+     position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    letter-spacing: -5px;
+    animation: old-text 2s ease-in-out 3s forwards;
+}
+
+@keyframes old-text {
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: -765px;
+    }
+}
+.new{
+    
+    font-size: 100px;
+    color: white;
+    right: -605px;
+    opacity: 0;
+     position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    animation: new-text 2s ease-in-out 2s forwards;
+    
+}
+@keyframes new-text{
+    0%{
+     right: -606px;
+     opacity: 1;
+     color: gold;
+    }
+  
+    40%{
+        right: -95px;
+        opacity: 1;
+        color: gold;
+    }
+    90%{
+        right: -85px;
+        opacity: 1;
+        color: gold;
+    }
+    100%{
+        right: -50px;
+        opacity: 1;
+        color: gold;
+    }
+}
+
+@keyframes colour-ever {
+    0%{
+        color: white;
+    }
+    100%{
+        color: gold;
+    }
+}
+/* .ballon1{
+    width: 70px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    opacity: 0;
+    top: 15%;
+   right: 0%;
+   animation: ballon-animation 2s ease-in-out 4s forwards;
+
+}
+.ballon1::after{
+    content: " ";
+    left: 50%;
+    margin-left: -2px;
+    bottom: -80px;
+    width: 4px;
+    position: absolute;
+    height: 80px;
+    background-color: white;
+
+}
+@keyframes ballon-animation {
+    0%{
+        right: -606px;
+        opacity: 1;
+      
+       }
+     
+       40%{
+           right: -95px;
+           opacity: 1;
+          
+       }
+       90%{
+           right: -85px;
+           opacity: 1;
+           right: 540px;
+        
+       }
+       100%{
+           right: 540px;
+           opacity: 1;
+         
+}
+} */
